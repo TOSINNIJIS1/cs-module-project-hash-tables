@@ -54,6 +54,7 @@ class HashTable:
         Implement this.
         """
         # Your code here
+        self.count / self.capacity
 
 
     def fnv1(self, key):
@@ -180,6 +181,18 @@ class HashTable:
         Implement this.
         """
         # Your code here
+
+        storage = self.storage
+        self.capacity = new_capacity
+        storage =[None] * self.capacity
+
+        for i in range(len(storage)):
+            node = storage[i]
+
+            while node is not None:
+                newIndex = self.index(node.key)
+                self.storage[newIndex] = node 
+                node = node.next
 
 
 

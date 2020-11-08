@@ -17,7 +17,7 @@ function Length(s) {
 
 console.log(Length('dfd34'))
 
-let arr = []
+let arr = [ ]
 
 function Addition (a, b) {
     const string = typeof a === 'string' || typeof b === 'string' 
